@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+
+      function openingbox() {
+        var clbx = document.getElementById('closing');
+        var opbx = document.getElementById('opening');
+
+        clbx.style.display = "block";
+        opbx.style.display = "block";
+      }
+      function closingbox() {
+        var clbx = document.getElementById('closing');
+        var opbx = document.getElementById('opening');
+
+        clbx.style.display = "none";
+        opbx.style.display = "none";
+      }
+    </script>
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+
+    <div id= "introducetext" class="introducetext">
+      <p> Italian-Brazilian, single, 31 years </p>
+      <p> Camperstraat 41, Amsterdam – NL
+      <p> POST CODE: 1091 AD
+      <p> Cell phone*: +31 6 14394816
+      <p> e-mail:dany_varre@hotmail.com
+      <p> GitHub – DanyelleGrillo
+    </div>
+    <div id="botao">
+    <a href="#" onclick="openingbox()">
+      <img src="profilepicture.png" alt="Imagem" />
+    </a>
+    </div>
+
+    <div id= "opening" class="opening">
+      <img src="curriculo.jpg">
+    </div>
+
+    <div id="closing" class="closing" onclick="closingbox()">
+    </div>
+
+
+  </body>
+</html>
